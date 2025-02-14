@@ -1,695 +1,702 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background: radial-gradient(circle, #3b3a3a, #031220, #0b1a13);
+  font-family: "Arial", sans-serif;
+  background: radial-gradient(circle, #3b3a3a, #031220, #0b1a13);
 }
 
 :root {
-    --primary-color: #fff;
-    --secondary-color: #000;
-    --font-size-large: 3rem;
-    --font-size-medium: 1.5rem;
-    --spacing-large: 2rem;
-    --spacing-medium: 1.8rem;
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --font-size-large: 3rem;
+  --font-size-medium: 1.5rem;
+  --spacing-large: 2rem;
+  --spacing-medium: 1.8rem;
 }
 
 main {
-    height: auto;
+  height: auto;
 }
 
 [id]::before {
-    content: "";
-    display: block;
-    height: 70px;
-    margin-top: -70px;
+  content: "";
+  display: block;
+  height: 70px;
+  margin-top: -70px;
 }
 
 .secao-topo {
-    width: 100vw;
-    height: 4rem;
-    background-color: #3b3a3a;
-    color: #fff;
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    transition: box-shadow 0.3s ease;
+  width: 100vw;
+  height: 4rem;
+  background-color: #3b3a3a;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  transition: box-shadow 0.3s ease;
 }
 
 header.no-shadow {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 header.shadow {
-    box-shadow: 0 0.1px 4px #ffffff57;
+  box-shadow: 0 0.1px 4px #ffffff57;
 }
 
 .linksTopo {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .linksTopo a {
-    text-decoration: none;
-    font-size: 1rem;
-    color: #fff;
-    transition: color 0.3s;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+  transition: color 0.3s;
 }
 
 .linksTopo a::before {
-    content: attr(data-text); 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, #e3eed4, #aec3b0, #85d67d, #5edb9f);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    z-index: 1;
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #e3eed4, #aec3b0, #85d67d, #5edb9f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .linksTopo a:hover {
-    background: linear-gradient(to right, #e3eed4, #aec3b0, #85d67d, #5edb9f);
-    -webkit-background-clip: text;  
-    background-clip: text; 
-    -webkit-text-fill-color: transparent;
-    text-decoration: none;
-} 
+  background: linear-gradient(to right, #e3eed4, #aec3b0, #85d67d, #5edb9f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
 
 .menu-sanduiche {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 /* seção banner */
 
 .secao-banner,
 #projetos {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
 .titulo1 {
-    margin-top: 8%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    color: var(--primary-color);
+  margin-top: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: var(--primary-color);
 }
 
 .dev {
-    text-align: center;
-    margin: 2.0rem 0 1.8rem 0;
-    color: #fff;
-    font-size: 1.5rem;
-    text-transform: uppercase;
+  text-align: center;
+  margin: 2rem 0 1.8rem 0;
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 .btn-link {
-    width: 300px;
-    text-align: center;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
 }
 
 .download-btn {
-    text-decoration: none;
-    color: white;
-    font-size: 13px;
-    border-radius: 5px;
-    background: linear-gradient(to right, #c913138c, #cac0c0, #00000093);
-    padding: 3px 10px;
-    text-shadow: 0 0 1px #333;
-    transition: transform 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #c913138c, #cac0c0, #00000093);
+  padding: 3px 10px;
+  text-shadow: 0 0 1px #333;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
 }
 
 .btn-email {
-    font-size: 13px;
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 3px 10px;
-    transition: transform 0.3s ease, color 0.3s ease;
+  font-size: 13px;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 3px 10px;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
 }
 
 .download-btn:hover,
 .btn-email:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* container sobre mim */
 
 .container-sobre-mim {
-    width: 90%;
-    max-width: 750px;
-    height: 16rem;
-    margin: 30px auto;
-    display: flex;
-    background-color: #3b3a3a;
-    border-radius: 5px;
-    transition: transform 0.5s ease-in-out;
+  width: 90%;
+  max-width: 750px;
+  height: 16rem;
+  margin: 30px auto;
+  display: flex;
+  background-color: #3b3a3a;
+  border-radius: 5px;
+  transition: transform 0.5s ease-in-out;
 }
 
 .container-sobre-mim:hover {
-    transform: scale(1.04);
+  transform: scale(1.04);
 }
 
 .sobre-mim {
-    margin: 10px;
-    display: flex;
+  margin: 10px;
+  display: flex;
 }
 
 .sobre-mim p {
-    color: #fff;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-    font-weight: 500;
-    line-height: 1.3;
+  color: #fff;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  line-height: 1.3;
 }
 
 .foto-perfil img {
-    max-height: 14.7rem;
-    max-width: 20rem;
-    border-radius: 5px;
-    margin-left: 10px;
-    object-fit: cover;
+  max-height: 14.7rem;
+  max-width: 20rem;
+  border-radius: 5px;
+  margin-left: 10px;
+  object-fit: cover;
 }
 
 .sobre-mim span {
-    display: none;
+  display: none;
 }
 
 /* seção tecnologias */
 
 .tecnologias {
-    width: 100%;
-    height: 100vh;
-    padding: 1rem;
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
 }
 
 .titulo-tec {
-    color: white;
-    text-align: center;
-    font-size: 3rem;
-    margin-top: 70px;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 70px;
 }
 
 .agrupa-tec {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-    height: 30rem;
-    margin: 50px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  height: 30rem;
+  margin: 50px auto 0 auto;
 }
 
 .agrupa-tec p {
-    text-align: center;
-    font-size: 1rem;
-    color: #fff;
-    font-weight: bold;
-    margin: 10px;
-    gap: 20px;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: bold;
+  margin: 10px;
+  gap: 20px;
 }
 
 .tec1,
 .tec2,
 .tec3 {
-    width: 300px;
-    min-width: 5rem;
-    height: 300px;
-    min-height: 150px;
-    object-fit: cover;
-    background-color: #3b3a3a;
-    margin: 15px;
-    position: relative;
-    border-radius: 5px;
-    box-shadow: 0 0 2px 1px #f5eded4d;
-    transition: transform 0.3s ease-in-out;
+  width: 300px;
+  min-width: 5rem;
+  height: 300px;
+  min-height: 150px;
+  object-fit: cover;
+  background-color: #3b3a3a;
+  margin: 15px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 1px #f5eded4d;
+  transition: transform 0.3s ease-in-out;
 }
 
 .tec1:hover,
 .tec2:hover,
 .tec3:hover {
-    transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .html {
-    max-width: 350px;
-    height: auto;
-    position: absolute;
-    left: -8%;
-    top: 20px;
+  max-width: 350px;
+  height: auto;
+  position: absolute;
+  left: -8%;
+  top: 20px;
 }
 
 .css {
-    max-width: 270px;
-    position: absolute;
-    left: 20px;
-    top: 45px;
+  max-width: 270px;
+  position: absolute;
+  left: 20px;
+  top: 45px;
 }
 
 .js {
-    max-width: 190px;
-    position: absolute;
-    top: 40px;
-    left: 30px;
+  max-width: 190px;
+  position: absolute;
+  top: 40px;
+  left: 30px;
 }
 
 /* seção projetos */
 
 .titulo-projetos {
-    text-align: center;
-    color: white;
-    font-size: 3rem;
-    margin-top: 70px;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  margin-top: 70px;
 }
 
 #projetos {
-    width: 100%;
-    height: 100vh;
-    padding: 1rem;
-    border: 2px solid transparent;
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+  border: 2px solid transparent;
 }
 
 .agrupa-card-projetos {
-    width: 80%;
-    height: 65%;
-    margin: 5% auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  width: 80%;
+  height: 65%;
+  margin: 5% auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
 }
 
 .pousada,
-.linkBioNeymarJr {
-    width: 500px;
-    height: 300px;
-    overflow: hidden;
-    padding: 10px;
-    margin: 0 auto;
-    background-color: #3b3a3a;
-    border-radius: 5px;
-    transition: transform 0.3s ease-in-out;
+.linkBioNeymarJr,
+.dakarFunilariaPintura {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: #3b3a3a;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .pousada:hover,
-.linkBioNeymarJr:hover {
-    transform: scale(1.03);
+.linkBioNeymarJr:hover,
+.dakarFunilariaPintura:hover {
+  transform: scale(1.03);
 }
 
 .linkBioNeymarJr p,
-.pousada p {
-    font-size: 12px;
-    color: #fff;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    text-decoration: none;
+.pousada p,
+.dakarFunilariaPintura p {
+  font-size: 12px;
+  color: #fff;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  text-decoration: none;
 }
 
 .imagem-pousada,
-.imagem-linkBio {
-    width: 100%;
-    height: 90%;
-    border-radius: 2px;
-    object-fit: cover;
+.imagem-linkBio,
+.imagem-funilaria {
+  width: 100%;
+  height: 90%;
+  border-radius: 2px;
+  object-fit: cover;
 }
 
 /* Seção Rodapé */
 
 .rodape {
-    width: 100%;
-    height: 80px;
-    background-color: #3b3a3a;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: #3b3a3a;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .email {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 210px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 210px;
 }
 
 .icon-envelope {
-    width: 30px;
+  width: 30px;
 }
 
 .rodape p {
-    font-size: 12px;
-    color: #fff;
+  font-size: 12px;
+  color: #fff;
 }
 
 .agrupa-redes {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
 }
 
 .agrupa-redes a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .icon-linkedin,
 .icon-github,
 .icon-whats {
-    border-radius: 50px;
-    width: 50px;
-    margin: 0;
-    padding: 0;
+  border-radius: 50px;
+  width: 50px;
+  margin: 0;
+  padding: 0;
 }
 
-@media(max-width:780px) {
-    [id]::before {
-        content: "";
-        display: block;
-        height: 70px;
-        margin-top: -10px;
-    }
+@media (max-width: 780px) {
+  [id]::before {
+    content: "";
+    display: block;
+    height: 70px;
+    margin-top: -10px;
+  }
 
+  /*media seção banner */
+  .secao-banner {
+    border: 1px solid transparent;
+  }
 
-    /*media seção banner */
-    .secao-banner {
-        border: 1px solid transparent;
-    }
+  .titulo1 {
+    font-size: 2rem;
+    flex-wrap: wrap;
+  }
 
-    .titulo1 {
-        font-size: 2rem;
-        flex-wrap: wrap;
-    }
+  .container-sobre-mim {
+    height: auto;
+    width: 95%;
+    transition: transform 3s ease-in-out;
+  }
 
-    .container-sobre-mim {
-        height: auto;
-        width: 95%;
-        transition: transform 3s ease-in-out;
-    }
+  .container-sobre-mim:hover {
+    transform: scale(1.01);
+  }
 
-    .container-sobre-mim:hover {
-        transform: scale(1.01);
-    }
+  .sobre-mim {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
 
-    .sobre-mim {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: space-around;
-    }
+  .sobre-mim p {
+    font-size: 0.7rem;
+  }
 
-    .sobre-mim p {
-        font-size: 0.7rem;
-    }
+  span {
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: #fff;
+    font-weight: 900;
+    width: 100%;
+    text-align: left;
+  }
 
-    span {
-        font-size: 15px;
-        letter-spacing: 3px;
-        color: #fff;
-        font-weight: 900;
-        width: 100%;
-        text-align: left;
-    }
+  .foto-perfil img {
+    max-height: 13rem;
+    width: 20rem;
+    margin: 5px;
+    box-shadow: 0 0 5px rgb(20, 19, 19);
+  }
 
-    .foto-perfil img {
-        max-height: 13rem;
-        width: 20rem;
-        margin: 5px;
-        box-shadow: 0 0 5px rgb(20, 19, 19);
-    }
+  /*   /*media seção tecnologias */
+  .tecnologias {
+    height: 100vh;
+  }
 
-    /*   /*media seção tecnologias */
-    .tecnologias {
-        height: 100vh;
-    }
+  .titulo-tec {
+    margin-top: 10px;
+  }
 
-    .titulo-tec {
-        margin-top: 10px;
-    }
+  .agrupa-tec {
+    height: 30rem;
+    border: 46px solid #333;
+  }
 
-    .agrupa-tec {
-        height: 30rem;
-        border: 46px solid #333;
-    }
+  .agrupa-tec p {
+    margin: 10px;
+  }
 
-    .agrupa-tec p {
-        margin: 10px;
-    }
+  .tec1,
+  .tec2,
+  .tec3 {
+    height: 300px;
+    max-height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .tec1,
-    .tec2,
-    .tec3 {
-        height: 300px;
-        max-height: 170px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
+  .html,
+  .css,
+  .js {
+    position: absolute;
+  }
 
-    .html,
-    .css,
-    .js {
-        position: absolute;
-    }
+  .html {
+    width: 24vw;
+    top: 20%;
+    left: calc(6% - 10px);
+  }
 
-    .html {
-        width: 24vw;
-        top: 20%;
-        left: calc(6% - 10px);
-    }
+  .css {
+    width: 16vw;
+    top: 27%;
+    left: calc(20% - 10px);
+  }
 
-    .css {
-        width: 16vw;
-        top: 27%;
-        left: calc(20% - 10px);
-    }
+  .js {
+    width: 12vw;
+    top: 30%;
+    left: calc(30% - 10px);
+  }
 
-    .js {
-        width: 12vw;
-        top: 30%;
-        left: calc(30% - 10px);
-    }
+  /* seção projetos */
 
-    /* seção projetos */
+  .titulo-projetos {
+    margin-top: 10px;
+  }
 
-    .titulo-projetos {
-        margin-top: 10px;
-    }
+  .agrupa-card-projetos {
+    width: 95%;
+    height: 85%;
+    display: flex;
+    gap: 10px;
+  }
 
-    .agrupa-card-projetos {
-        width: 95%;
-        height: 85%;
-        display: flex;
-        gap: 10px;
-    }
+  .imagem-linkBio,
+  .imagem-pousada {
+    width: 100%;
+    height: 90%;
+    border-radius: 1.5px;
+    object-fit: cover;
+  }
 
-    .imagem-linkBio,
-    .imagem-pousada {
-        width: 100%;
-        height: 90%;
-        border-radius: 1.5px;
-        object-fit: cover;
-    }
+  .pousada,
+  .linkBioNeymarJr {
+    width: calc(100% / 2);
+    height: 70%;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    transition: transform 5s ease-in-out;
+  }
 
-    .pousada,
-    .linkBioNeymarJr {
-        width: calc(100% / 2);
-        height: 70%;
-        border-radius: 3px;
-        margin-bottom: 30px;
-        transition: transform 5s ease-in-out;
-    }
-
-    .pousada:hover,
-    .linkBioNeymarJr:hover {
-        transform: scale(1.01);
-    }
+  .pousada:hover,
+  .linkBioNeymarJr:hover {
+    transform: scale(1.01);
+  }
 }
 
-@media(min-width:320px) and (max-width: 480px) {
-    .secao-topo {
-        justify-content: flex-end;
-        background: transparent;
-    }
+@media (min-width: 320px) and (max-width: 480px) {
+  .secao-topo {
+    justify-content: flex-end;
+    background: transparent;
+  }
 
-    header.shadow {
-        box-shadow: none;
-    }
+  header.shadow {
+    box-shadow: none;
+  }
 
-    .linksTopo a:first-of-type {
-        display: none;
-    }
+  .linksTopo a:first-of-type {
+    display: none;
+  }
 
-    .linksTopo {
-        display: none;
-        /* Esconde o menu inicialmente */
-        flex-direction: column;
-        position: absolute;
-        top: 0;
-        left: 30px;
-        width: 13%;
-        border-radius: 0 0 5px 5px;
-        transition: all 0.3s ease-in-out;
-    }
+  .linksTopo {
+    display: none;
+    /* Esconde o menu inicialmente */
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 13%;
+    border-radius: 0 0 5px 5px;
+    transition: all 0.3s ease-in-out;
+  }
 
-    .linksTopo.ativo {
-        display: flex;
-        /* Mostra o menu ao ativar */
-        background-color: #3b3a3a;
-        height: 60px;
-        justify-content: space-around;
-        margin: 5px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        border: 1px solid #ccc;
-        border-radius: 8px;
-    }
+  .linksTopo.ativo {
+    display: flex;
+    /* Mostra o menu ao ativar */
+    background-color: #3b3a3a;
+    height: 60px;
+    justify-content: space-around;
+    margin: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
 
-    .menu-sanduiche {
-        display: block;
-        /* Mostra o menu sanduíche em dispositivos menores */
-        cursor: pointer;
-        /* Adiciona cursor de clique */
-        margin: 10px;
-    }
+  .menu-sanduiche {
+    display: block;
+    /* Mostra o menu sanduíche em dispositivos menores */
+    cursor: pointer;
+    /* Adiciona cursor de clique */
+    margin: 10px;
+  }
 
-    .titulo1 {
-        font-size: 1.5rem;
-    }
+  .titulo1 {
+    font-size: 1.5rem;
+  }
 
-    .dev {
-        font-size: 1rem;
-    }
-    .secao-banner {
-        height: 100%;
-        margin-top: -15%;
-    }
+  .dev {
+    font-size: 1rem;
+  }
+  .secao-banner {
+    height: 100%;
+    margin-top: -15%;
+  }
 
-    /* media seção tecnologia */
-    .tecnologias {
-        height: 100%;
-    }
-    .titulo-tec {
-        font-size: 1.5rem;
-        text-align: center;
-        margin-top: -70px;
-    }
+  /* media seção tecnologia */
+  .tecnologias {
+    height: 100%;
+  }
+  .titulo-tec {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: -70px;
+  }
 
-    .agrupa-tec {
-        width: 100%;
-        display: block;
-        justify-content: space-evenly;
-        text-align: center;
-        height: 100%;
-        margin-top: 20px;
-        border: 46px solid #333;
-    }
+  .agrupa-tec {
+    width: 100%;
+    display: block;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 100%;
+    margin-top: 20px;
+    border: 46px solid #333;
+  }
 
-    .tec1,
-    .tec2,
-    .tec3 {
-        height: 8rem;
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
+  .tec1,
+  .tec2,
+  .tec3 {
+    height: 8rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .html,
-    .css,
-    .js {
-        position: absolute;
-    }
+  .html,
+  .css,
+  .js {
+    position: absolute;
+  }
 
-    .html {
-        width: 40vw;
-        top: 20%;
-        left: calc(23% - 10px);
-    }
+  .html {
+    width: 40vw;
+    top: 20%;
+    left: calc(23% - 10px);
+  }
 
-    .css {
-        width: 28vw;
-        top: 27%;
-        left: calc(30% - 10px);
-    }
+  .css {
+    width: 28vw;
+    top: 27%;
+    left: calc(30% - 10px);
+  }
 
-    .js {
-        width: 22vw;
-        top: 30%;
-        left: calc(37% - 10px);
-    }
+  .js {
+    width: 22vw;
+    top: 30%;
+    left: calc(37% - 10px);
+  }
 
-    /* media seção projetos */
+  /* media seção projetos */
 
-    #projetos {
-        height: auto;
-        margin-top: -70px;
-    }
+  #projetos {
+    height: auto;
+    margin-top: -70px;
+  }
 
-    .titulo-projetos {
-        font-size: 1.5rem;
-    }
+  .titulo-projetos {
+    font-size: 1.5rem;
+  }
 
-    .agrupa-card-projetos {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
+  .agrupa-card-projetos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .pousada,
-    .linkBioNeymarJr {
-        width: 100%;
-        height: 200px;
-        border-radius: 3px;
-        transition: transform 5s ease-in-out;
-    }
+  .pousada,
+  .linkBioNeymarJr {
+    width: 100%;
+    height: 200px;
+    border-radius: 3px;
+    transition: transform 5s ease-in-out;
+  }
 
-    /* seção rodape */
-    .rodape {
-        height: 12rem;
-        flex-direction: column;
-    }
+  /* seção rodape */
+  .rodape {
+    height: 12rem;
+    flex-direction: column;
+  }
 
-    .rodape p {
-        font-size: 0.7rem;
-    }
+  .rodape p {
+    font-size: 0.7rem;
+  }
 
-    .copy {
-        text-align: center;
-        line-height: 1.5;
-    }
+  .copy {
+    text-align: center;
+    line-height: 1.5;
+  }
 
-    .simbol {
-        font-size: 1.6rem;
-        vertical-align: -0.2em;
-    }
+  .simbol {
+    font-size: 1.6rem;
+    vertical-align: -0.2em;
+  }
 
-    .agrupa-redes {
-        width: 70%;
-        display: flex;
-        justify-content: center;
-        gap: 1px;
-    }
-
+  .agrupa-redes {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+  }
 }

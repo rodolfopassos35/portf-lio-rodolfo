@@ -1,111 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Rodolfo Passos, desenvolvedor web e entusiasta de tecnologia. Conheça meus projetos e entre em contato!">
-    <meta name="keywords" content="desenvolvedor web, portfólio, tecnologia, projetos, contato">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Rodolfo Passos, desenvolvedor web e entusiasta de tecnologia. Conheça meus projetos e entre em contato!"
+    />
+    <meta
+      name="keywords"
+      content="desenvolvedor web, portfólio, tecnologia, projetos, contato"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Portfólio-Rodolfo</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="secao-topo">
-        <nav class="linksTopo"  aria-label="Main Navigation">
-            <a href="#home">Rodolfo Passos</a>
-            <a href="#home"><i class="fas fa-home"></i> Home</a>
-            <a href="#tecnologias"><i class="fas fa-info"></i> Sobre</a>
-            <a href="#projetos"><i class="fas fa-envelope"></i> Projetos</a>
-        </nav>
-        <div class="menu-sanduiche" onclick="toggleMenu()" aria-label="Menu">
-            &#9776;
-        </div>
+      <nav class="linksTopo" aria-label="Main Navigation">
+        <a href="#home">Rodolfo Passos</a>
+        <a href="#home"><i class="fas fa-home"></i> Home</a>
+        <a href="#tecnologias"><i class="fas fa-info"></i> Sobre</a>
+        <a href="#projetos"><i class="fas fa-envelope"></i> Projetos</a>
+      </nav>
+      <div class="menu-sanduiche" onclick="toggleMenu()" aria-label="Menu">
+        &#9776;
+      </div>
     </header>
     <main>
-        <section class="secao-banner" id="home">
+      <section class="secao-banner" id="home">
+        <h1 class="titulo1">Bem vindo(a) ao meu portfólio</h1>
 
-            <h1 class="titulo1">Bem vindo(a) ao meu portfólio</h1>
-                
-            <p class="dev">Desenvolvedor de sites</p>
-    
-            <div class="btn-link">
-                <a href="assets/Rodolfo Rodrigo da Silva Passos (1).pdf" title="Visitar meu curriculo" download="Rodolfo-Curriculo.pdf" class="download-btn">Baixar Currículo</a>
-                
-                <a href="mailto:rodolfopassos35@gmail.com" class="btn-email" title="Entre em contato por email">Enviar email</a>
-            </div>
-    
-            <div class="container-sobre-mim">
-                <article class="sobre-mim">
-                    <p>
-                        Olá! Meu nome é <b>Rodolfo</b>, tenho 39 anos, sou natural de Campinas-SP e atualmente sou estudante de programação, buscando transformar minha paixão por tecnologia em uma nova carreira.
-                        Minha jornada começou na área de instalações prediais, onde trabalho há anos como encanador especializado em tubulação de gás. Essa experiência me ensinou a importância de precisão, segurança e dedicação ao trabalho, habilidades que agora aplico ao mundo da programação.
-                        Estou sempre em busca de aprender algo novo e enfrentar desafios que me façam crescer profissionalmente. Meu objetivo é combinar minha habilidade de resolver problemas com o poder da tecnologia para criar soluções úteis e eficientes.
-                        No meu tempo livre, gosto de explorar novas linguagens e ferramentas de programação, além de trabalhar em projetos que ampliem meu portfólio. Estou animado para contribuir em projetos inovadores e continuar evoluindo como programador.
-                        Se quiser saber mais ou colaborar comigo, fique à vontade para entrar em contato!
-                    </p>
-                    <span>Rodolfo R S Passos</span>
-                    <div class="foto-perfil">
-                        <img src="assets/foto-perfil.jpg"  alt="foto perfil portfólio">
-                    </div>
-                </article>
-            </div>
-        </section>
+        <p class="dev">Desenvolvedor de sites</p>
 
-        <section class="tecnologias" id="tecnologias">
-            
-            <h2 class="titulo-tec">Tecnologias</h2>
-            
-            <div class="agrupa-tec">
-                <div class="tec1"><img class="html" src="assets/icon-html.png" alt="icon-html">
-                    <p>HTML</p>
-                </div>
-                
-                <div class="tec2"><img class="css" src="assets/icon-css.png"  alt="icon-css">
-                    <p>CSS</p>
-                </div>
+        <div class="btn-link">
+          <a
+            href="assets/Rodolfo Rodrigo da Silva Passos (1).pdf"
+            title="Visitar meu curriculo"
+            download="Rodolfo-Curriculo.pdf"
+            class="download-btn"
+            >Baixar Currículo</a
+          >
 
-                <div class="tec3"><img class="js" src="assets/icon-js.png" alt="icon-js">
-                    <p>JavaScript</p>
-                </div>    
-            </div>
-        </section>
-        <section id="projetos">
-            <h2 class="titulo-projetos">Alguns Projetos</h2>
+          <a
+            href="mailto:rodolfopassos35@gmail.com"
+            class="btn-email"
+            title="Entre em contato por email"
+            >Enviar email</a
+          >
+        </div>
 
-            <div class="agrupa-card-projetos">
-                <div class="pousada">
-                    <a target="_blank" href="https://pousada-lime.vercel.app/">
-                    <img class="imagem-pousada" src="assets/pousada.png" alt="foto-pousada"></a>
-                    <p>Projeto Pousada</p>
-                </div>
-                <div class="linkBioNeymarJr">
-                    <a href="https://link-bio-one.vercel.app/" target="_blank">
-                    <img class="imagem-linkBio" src="assets/linkBioNeymarJr.png" alt="foto-linkBio"></a>
-                    <p>Projeto LinkBio do Neymar Jr</p>
-                </div>
-                
+        <div class="container-sobre-mim">
+          <article class="sobre-mim">
+            <p>
+              Olá! Meu nome é <b>Rodolfo</b>, tenho 39 anos, sou natural de
+              Campinas-SP e atualmente sou estudante de programação, buscando
+              transformar minha paixão por tecnologia em uma nova carreira.
+              Minha jornada começou na área de instalações prediais, onde
+              trabalho há anos como encanador especializado em tubulação de gás.
+              Essa experiência me ensinou a importância de precisão, segurança e
+              dedicação ao trabalho, habilidades que agora aplico ao mundo da
+              programação. Estou sempre em busca de aprender algo novo e
+              enfrentar desafios que me façam crescer profissionalmente. Meu
+              objetivo é combinar minha habilidade de resolver problemas com o
+              poder da tecnologia para criar soluções úteis e eficientes. No meu
+              tempo livre, gosto de explorar novas linguagens e ferramentas de
+              programação, além de trabalhar em projetos que ampliem meu
+              portfólio. Estou animado para contribuir em projetos inovadores e
+              continuar evoluindo como programador. Se quiser saber mais ou
+              colaborar comigo, fique à vontade para entrar em contato!
+            </p>
+            <span>Rodolfo R S Passos</span>
+            <div class="foto-perfil">
+              <img src="assets/foto-perfil.jpg" alt="foto perfil portfólio" />
             </div>
-        </section>
+          </article>
+        </div>
+      </section>
+
+      <section class="tecnologias" id="tecnologias">
+        <h2 class="titulo-tec">Tecnologias</h2>
+
+        <div class="agrupa-tec">
+          <div class="tec1">
+            <img class="html" src="assets/icon-html.png" alt="icon-html" />
+            <p>HTML</p>
+          </div>
+
+          <div class="tec2">
+            <img class="css" src="assets/icon-css.png" alt="icon-css" />
+            <p>CSS</p>
+          </div>
+
+          <div class="tec3">
+            <img class="js" src="assets/icon-js.png" alt="icon-js" />
+            <p>JavaScript</p>
+          </div>
+        </div>
+      </section>
+      <section id="projetos">
+        <h2 class="titulo-projetos">Alguns Projetos</h2>
+
+        <div class="agrupa-card-projetos">
+          <div class="pousada">
+            <a
+              target="_blank"
+              href="https://pousada-lime.vercel.app/"
+              target="_blank"
+            >
+              <img
+                class="imagem-pousada"
+                src="assets/pousada.png"
+                alt="capa-pousada"
+            /></a>
+            <p>Pousada Secreta</p>
+          </div>
+          <div class="linkBioNeymarJr">
+            <a href="https://link-bio-one.vercel.app/" target="_blank">
+              <img
+                class="imagem-linkBio"
+                src="assets/linkBioNeymarJr.png"
+                alt="capa-linkBio"
+            /></a>
+            <p>LinkBio do Neymar Jr</p>
+          </div>
+          <div class="dakarFunilariaPintura">
+            <a
+              href="https://dakar-funilaria-pintura.vercel.app/"
+              target="_blank"
+            >
+              <img
+                class="imagem-funilaria"
+                src="assets/capaDakarFunilaria.png"
+                alt="capa-funilaria"
+              />
+            </a>
+            <p>funilaria e Pintura</p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="rodape">
-        <div class="email">
-            <img class="icon-envelope" src="assets/envelope.png" alt="icon-envelope">
-            <p>rodolfopassos35@gmail.com</p>
-        </div>
-        <p class="copy"><span class="simbol">&copy;</span>Rodolfo Passos. Todos os direitos reservados.</p>
-        <div class="agrupa-redes">
-
-            <a class="link-linkedin" title="Visitar meu perfil no Linkedin" href="https://www.linkedin.com/in/rodolfo-passos-8642b029b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtiUFq3VKRBaFYeGtPa%2BYdA%3D%3D">
-            <img class="icon-linkedin" src="assets/icon_linkedin.png" alt="icon-linkedin">                
-            </a>
-            <a class="github" title="Visitar meu perfil no github" href="https://github.com/rodolfopassos35">
-                <img class="icon-github" src="assets/icon_github.png" alt="icon_github">
-            </a>
-            <a href="tel:+5519994461397">
-                <img class="icon-whats" title="whatssapp" src="assets/icon-whats.png" alt="icon-whatsapp">
-            </a>
-            
-        </div>
+      <div class="email">
+        <img
+          class="icon-envelope"
+          src="assets/envelope.png"
+          alt="icon-envelope"
+        />
+        <p>rodolfopassos35@gmail.com</p>
+      </div>
+      <p class="copy">
+        <span class="simbol">&copy;</span>Rodolfo Passos. Todos os direitos
+        reservados.
+      </p>
+      <div class="agrupa-redes">
+        <a
+          class="link-linkedin"
+          title="Visitar meu perfil no Linkedin"
+          href="https://www.linkedin.com/in/rodolfo-passos-8642b029b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtiUFq3VKRBaFYeGtPa%2BYdA%3D%3D"
+        >
+          <img
+            class="icon-linkedin"
+            src="assets/icon_linkedin.png"
+            alt="icon-linkedin"
+          />
+        </a>
+        <a
+          class="github"
+          title="Visitar meu perfil no github"
+          href="https://github.com/rodolfopassos35"
+        >
+          <img
+            class="icon-github"
+            src="assets/icon_github.png"
+            alt="icon_github"
+          />
+        </a>
+        <a href="tel:+5519994461397">
+          <img
+            class="icon-whats"
+            title="whatssapp"
+            src="assets/icon-whats.png"
+            alt="icon-whatsapp"
+          />
+        </a>
+      </div>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
