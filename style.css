@@ -304,39 +304,36 @@ header.shadow {
   gap: 20px;
 }
 
-/* .pousada, */
-.linkBioNeymarJr,
+
+.projeto-amarante-cosmeticos,
 .dakarFunilariaPintura {
   width: 500px;
   height: 300px;
   overflow: hidden;
   padding: 10px;
   margin: 0 auto;
-  background-color: #3b3a3a;
   border-radius: 5px;
   transition: transform 0.3s ease-in-out;
 }
 
-/* .pousada:hover, */
-.linkBioNeymarJr:hover,
+.projeto-amarante-cosmeticos:hover,
 .dakarFunilariaPintura:hover {
   transform: scale(1.03);
+  background-color: #3b3a3a33;
 }
 
-.linkBioNeymarJr p,
-/* .pousada p, */
+.projeto-amarante-cosmeticos p,
 .dakarFunilariaPintura p {
-  font-size: 12px;
+  font-size: 1rem;
   color: #fff;
   height: 30px;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   text-decoration: none;
 }
 
-/* .imagem-pousada, */
-.imagem-linkBio,
+.imagem-amarante-cosmeticos,
 .imagem-funilaria {
   width: 100%;
   height: 90%;
@@ -511,16 +508,16 @@ header.shadow {
     gap: 10px;
   }
 
-  .imagem-linkBio,
-  /* .imagem-pousada */ {
+
+  .imagem-amarante-cosmeticos {
     width: 100%;
     height: 90%;
     border-radius: 1.5px;
     object-fit: cover;
   }
 
-  /*  .pousada, */
-  .linkBioNeymarJr {
+
+  .projeto-amarante-cosmeticos {
     width: calc(100% / 2);
     height: 70%;
     border-radius: 3px;
@@ -528,8 +525,8 @@ header.shadow {
     transition: transform 5s ease-in-out;
   }
 
-  /* .pousada:hover, */
-  .linkBioNeymarJr:hover {
+
+  .projeto-amarante-cosmeticos:hover {
     transform: scale(1.01);
   }
 }
@@ -587,6 +584,7 @@ header.shadow {
   .dev {
     font-size: 1rem;
   }
+
   .secao-banner {
     height: 100%;
     margin-top: -15%;
@@ -596,6 +594,7 @@ header.shadow {
   .tecnologias {
     height: 100%;
   }
+
   .titulo-tec {
     font-size: 1.5rem;
     text-align: center;
@@ -666,7 +665,7 @@ header.shadow {
   }
 
   /* .pousada, */
-  .linkBioNeymarJr,
+  .projeto-amarante-cosmeticos,
   .dakarFunilariaPintura {
     width: 100%;
     height: 200px;
