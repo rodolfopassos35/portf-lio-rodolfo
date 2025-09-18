@@ -70,7 +70,10 @@ header.shadow {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, #e3eed4, #aec3b0, #85d67d, #5edb9f);
+  background: linear-gradient(to right, #e0f7fa, #b2ebf2, #80deea, #4dd0e1);
+
+
+
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -81,7 +84,8 @@ header.shadow {
 }
 
 .linksTopo a:hover {
-  background: linear-gradient(to right, #e3eed4, #aec3b0, #85d67d, #5edb9f);
+  background: linear-gradient(to right, #e0f7fa, #b2ebf2, #80deea, #4dd0e1);
+
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -133,7 +137,7 @@ header.shadow {
   color: white;
   font-size: 13px;
   border-radius: 5px;
-  background: linear-gradient(to right, #c913138c, #cac0c0, #00000093);
+  background: linear-gradient(to right, #020024, #090979, #06aaca);
   padding: 3px 10px;
   text-shadow: 0 0 1px #333;
   transition:
@@ -229,6 +233,15 @@ header.shadow {
   margin: 50px auto 0 auto;
 }
 
+.agrupa-tec img {
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.agrupa-tec img:hover {
+  transform: rotateY(180deg);
+}
+
 .agrupa-tec p {
   text-align: center;
   font-size: 1rem;
@@ -240,7 +253,9 @@ header.shadow {
 
 .tec1,
 .tec2,
-.tec3 {
+.tec3,
+.tec4,
+.tec5 {
   width: 300px;
   min-width: 5rem;
   height: 300px;
@@ -254,9 +269,12 @@ header.shadow {
   transition: transform 0.3s ease-in-out;
 }
 
+
 .tec1:hover,
 .tec2:hover,
-.tec3:hover {
+.tec3:hover,
+.tec4:hover,
+.tec5:hover {
   transform: scale(1.03);
 }
 
@@ -264,22 +282,36 @@ header.shadow {
   max-width: 350px;
   height: auto;
   position: absolute;
-  left: -8%;
-  top: 20px;
+  left: -24%;
+  top: 35px;
 }
 
 .css {
   max-width: 270px;
   position: absolute;
-  left: 20px;
-  top: 45px;
+  left: 1px;
+  top: 60px;
 }
 
 .js {
   max-width: 190px;
   position: absolute;
+  top: 60px;
+  left: 15px;
+}
+
+.react {
+  max-width: 210px;
+  position: absolute;
+  top: 50px;
+  left: 13px;
+}
+
+.linux {
+  max-width: 150px;
+  position: absolute;
   top: 40px;
-  left: 30px;
+  left: 50px;
 }
 
 /* seção projetos */
@@ -310,7 +342,8 @@ header.shadow {
 
 
 .projeto-amarante-cosmeticos,
-.dakarFunilariaPintura {
+.dakarFunilariaPintura,
+.gasTech {
   width: 500px;
   height: 300px;
   overflow: hidden;
@@ -321,12 +354,14 @@ header.shadow {
 }
 
 .projeto-amarante-cosmeticos:hover,
-.dakarFunilariaPintura:hover {
+.dakarFunilariaPintura:hover,
+.gasTech:hover {
   transform: scale(1.03);
 }
 
 .projeto-amarante-cosmeticos p,
-.dakarFunilariaPintura p {
+.dakarFunilariaPintura p,
+.gasTech p {
   font-size: 1rem;
   color: #fff;
   height: 30px;
@@ -337,7 +372,8 @@ header.shadow {
 }
 
 .imagem-amarante-cosmeticos,
-.imagem-funilaria {
+.imagem-funilaria,
+.imagem-gasTech {
   width: 100%;
   height: 90%;
   border-radius: 2px;
@@ -517,7 +553,9 @@ header.shadow {
 
   .tec1,
   .tec2,
-  .tec3 {
+  .tec3,
+  .tec4,
+  .tec5 {
     height: 300px;
     max-height: 170px;
     display: flex;
@@ -526,28 +564,34 @@ header.shadow {
     align-items: center;
   }
 
-  .html,
-  .css,
-  .js {
-    position: absolute;
-  }
-
   .html {
-    width: 24vw;
-    top: 20%;
-    left: calc(6% - 10px);
+    width: 20vw;
+    top: 23%;
+    right: calc(15% - 10px);
   }
 
   .css {
-    width: 16vw;
-    top: 27%;
-    left: calc(20% - 10px);
+    width: 13vw;
+    top: 33%;
+    left: calc(9% - 10px);
   }
 
   .js {
-    width: 12vw;
+    width: 9vw;
+    top: 35%;
+    left: calc(27% - 10px);
+  }
+
+  .react {
+    width: 11vw;
+    top: 35%;
+    left: calc(22% - 10px);
+  }
+
+  .linux {
+    width: 8vw;
     top: 30%;
-    left: calc(30% - 10px);
+    left: calc(35% - 10px);
   }
 
   /* seção projetos */
@@ -569,7 +613,8 @@ header.shadow {
 
 
   .projeto-amarante-cosmeticos,
-  .dakarFunilariaPintura {
+  .dakarFunilariaPintura,
+  .gasTech {
     width: calc(100% / 2);
     height: 300px;
     overflow: hidden;
@@ -595,26 +640,30 @@ header.shadow {
   }
 
   .linksTopo {
-    display: none;
-    flex-direction: column;
+    display: flex;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
     position: absolute;
     top: 0;
-    left: 30px;
-    width: 13%;
-    border-radius: 0 0 5px 5px;
-    transition: all 0.3s ease-in-out;
+    left: 50px;
+    width: 70%;
+    height: 25px;
+    background-color: #1f24209f;
+    margin: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
   }
 
   .linksTopo.ativo {
-    display: flex;
-    background-color: #3b3a3a;
-    height: 60px;
-    justify-content: space-around;
-    margin: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    transform: scaleY(1);
+    opacity: 1;
+    pointer-events: auto;
   }
+
+
 
   .menu-sanduiche {
     display: block;
@@ -646,8 +695,9 @@ header.shadow {
     height: min-content
   }
 
+
   .titulo1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .dev {
@@ -682,20 +732,18 @@ header.shadow {
 
   .tec1,
   .tec2,
-  .tec3 {
+  .tec3,
+  .tec4,
+  .tec5 {
     height: 8rem;
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
 
-  .html,
-  .css,
-  .js {
-    position: absolute;
-  }
 
   .html {
     width: 40vw;
@@ -713,6 +761,18 @@ header.shadow {
     width: 22vw;
     top: 30%;
     left: calc(37% - 10px);
+  }
+
+  .react {
+    width: 25vw;
+    top: 20%;
+    left: calc(35% - 10px);
+  }
+
+  .linux {
+    width: 25vw;
+    top: 5%;
+    left: calc(35% - 10px);
   }
 
   /* media seção projetos */
@@ -733,9 +793,9 @@ header.shadow {
     flex-direction: column;
   }
 
-  /* .pousada, */
   .projeto-amarante-cosmeticos,
-  .dakarFunilariaPintura {
+  .dakarFunilariaPintura,
+  .gasTech {
     width: 100%;
     height: 200px;
     border-radius: 3px;
