@@ -44,7 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     menuToggle.addEventListener("click", toggleMenu);
-    menuToggle.addEventListener("touchstart", toggleMenu);
   } else {
     console.error("Elementos do menu não encontrados!");
   }
